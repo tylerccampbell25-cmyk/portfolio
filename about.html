@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>About | Tyler Campbell</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: { "primary": "#2463eb", "background-light": "#f8fafc", "background-dark": "#0B1120" },
+                    fontFamily: { "display": ["Public Sans", "sans-serif"] }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-400 antialiased">
+    <nav class="sticky top-0 z-50 w-full border-b border-slate-200 dark:border-slate-800/50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-primary text-3xl">terminal</span>
+                <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white">Tyler Campbell | Portfolio</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-semibold hover:text-primary transition-colors" href="work.html">Work</a>
+                <a class="text-sm font-semibold text-primary" href="about.html">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6 py-20">
+        <section class="grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-4">
+                <div class="size-64 rounded-full overflow-hidden border-4 border-slate-800 mx-auto">
+                    <img src="IMG_8664.jpeg" alt="Portrait" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="md:col-span-8">
+                <h1 class="text-5xl font-black text-white mb-6">Hi, I'm <span class="text-primary">Tyler Campbell</span>.</h1>
+                <p class="text-lg leading-relaxed">Hi, I'm a Computer Science student working toward my Bachelor's degree 
+                    after completing my Associate's — and I've been hands-on with technology, teamwork, and leadership for years. I recently built a weather app
+                     that pulls real-time data from a live API, which gave me a great foundation in how modern applications actually work. Outside of coding, I 
+                     spend my time as an Assistant Coach for a men's club soccer team, where I've learned just as much about communication and leadership as I have
+                     in any classroom. Whether I'm debugging code, coordinating a practice plan, or working a busy shift, I bring the same energy and reliability
+                      to everything I do. I'm excited to keep building, keep learning, and eventually bring that same dedication to a career in tech.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-200 dark:border-slate-800 py-10 text-center">
+        <p class="text-slate-500 text-sm">© 2026 Tyler Campbell. Built with passion.</p>
+    </footer>
+</body>
+</html>
